@@ -1,0 +1,10 @@
+# Files assignment
+The assignment simulates the order taking process at a diner. The menu items (found in data.py)
+has item types, item description, and price. 
+Create a functions.py module that will have code for the following functions. 
+a. Save the menu_items data to a .csv file.  This function will receive the list, and file_name as inputs.
+d. Create a function named make_order that will build an order using order taker name (input by the user), list of three items 
+(randomly selected from the list), corresponding quantities (randomly generated from a [3, 10] range, 
+and the delivery option (either dine-in or to-go). The function will use the list as an argument and return the order.
+e. Print the order details, and compute the total 
+                                                                                                                                                                           
