@@ -1,2 +1,47 @@
 # Files assignment
-In this assignment, you will rename adoptions.son file.                                                                                                                                                                            
+In this assignment, 
+1. you will rename adoptions.son file as your_name_adoptions.json.   
+2. Review the contents of the json file and understand its structure.
+3. Create a function that prompts the user for a folder name where the json file is found and opens the data into a variable.  Make sure the function will have mechanism for error handling.
+The first item in the json file is shown below.  The data lists books adopted in academic institutions.  Review the structure and you will find that each adoption record has multiple contacts,
+one university, multiple adoptions, and multiple messages.
+[{"id":1,"guid":"986218ba-d5f0-4fd7-a7cd-035310a1d148",
+  contacts":[
+    {"order":1,"gender":"Male","firstname":"Adam","lastname":"Montgomery"},
+    {"order":2,"gender":"Female","firstname":"Gloria","lastname":"West"}],
+  "university":
+    {"id":188429,"name":"Adelphi University","address":"South Ave","city":"Garden City",
+     "state":"New York","website":"www.adelphi.edu/","zip":"11530-0701",
+     "longitude":-73.653321,"latitude":40.721439,"classification":"Doctoral/Research Universities"},
+   "adoptions":
+     [{"id":1,"date":"7/12/2015","quantity":545,
+       "book":{"id":489,"isbn10":"032182623X","isbn13":9780321826237,
+               "title":"Statistics for Business and Economics","category":"Statistics"}},
+      {"id":2,"date":"12/18/2015","quantity":138,
+        "book":{"id":603,"isbn10":"0321825276","isbn13":9780321825278,
+               "title":"Intro Stats","category":"Statistics"}},
+      {"id":3,"date":"4/25/2015","quantity":158,
+         "book":{"id":480,"isbn10":"032183870X","isbn13":9780321838704,"title":"Fundamentals of Statistics","category":"Statistics"}},
+      {"id":4,"date":"6/21/2015","quantity":362,
+         "book":{"id":550,"isbn10":"0321829174","isbn13":9780321829177,"title":"Literature for Composition","category":"English"}},
+      {"id":5,"date":"11/21/2015","quantity":116,
+          "book":{"id":896,"isbn10":"0132994895","isbn13":9780132994897,"title":"Psychology of Investing","category":"Business"}},
+      {"id":6,"date":"6/12/2015","quantity":612,
+          "book":{"id":693,"isbn10":"0133370437","isbn13":9780133370430,"title":"Network Security Essentials: Applications and Standards, 5/e","category":"Computer Science"}},
+      {"id":7,"date":"11/6/2015","quantity":282,
+          "book":{"id":943,"isbn10":"0132991306","isbn13":9780132991308,"title":"Modern Systems Analysis and Design","category":"Business"}}],
+   "messages":
+      [{"id":1,"date":"3/4/2016",
+        "content":"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. 
+          Duis consequat dui nec nisi volutpat eleifend.","category":"Help"},
+        {"id":2,"date":"7/7/2015","content":"Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. 
+           In eleifend quam a odio. In hac habitasse platea dictumst.","category":"Response"},
+        {"id":3,"date":"9/12/2015","content":"Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. 
+           Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.","category":"Response"},
+        {"id":4,"date":"6/14/2015","content":"Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. 
+           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien.","category":"Query"}]},
+
+4. Create functions for each Create CSV files for each of the set of data.  For example, the adoption data csv will have id, guid, and university columns. 
+The lists in the values part of the dictionary would result in a csv that has the adoption_id (like a foreign key of a table) and 
+its columns.  For example, book_adoptions csv will have adoption_id, adoptions_id, date, quantity, book_id.  (If you are not
+sure about the csv files and their columns, contact the instructor.)
