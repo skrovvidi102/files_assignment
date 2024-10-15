@@ -41,7 +41,8 @@ one university, multiple adoptions, and multiple messages.
         {"id":4,"date":"6/14/2015","content":"Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. 
            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien.","category":"Query"}]},
 
-4. Create functions for each Create CSV files for each of the set of data.  For example, the adoption data csv will have id, guid, and university columns. 
-The lists in the values part of the dictionary would result in a csv that has the adoption_id (like a foreign key of a table) and 
-its columns.  For example, book_adoptions csv will have adoption_id, adoptions_id, date, quantity, book_id.  (If you are not
-sure about the csv files and their columns, contact the instructor.)
+4. The adoption data includes have id, guid, and university. The adoptions key records what book is adopted has adoption_id, adoptions_id, date, quantity,
+book_id.  There are four record sets that can be saved to a csv files.  (If you are not sure about the csv files and their columns, contact the instructor.)
+Create a separate function for each of the four csv file.
+5. 
+
