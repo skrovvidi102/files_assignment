@@ -1,6 +1,6 @@
 # Files assignment
-In this assignment, 
-1. you will rename adoptions.son file as your_name_adoptions.json.   
+In this assignment, you will read an json file and create a few csv files. 
+1. Rename adoptions.son file as your_name_adoptions.json.   
 2. Review the contents of the json file and understand its structure.
 3. Create a function that prompts the user for a folder name where the json file is found and opens the data into a variable.  Make sure the function will have mechanism for error handling.
 The first item in the json file is shown below.  The data lists books adopted in academic institutions.  Review the structure and you will find that each adoption record has multiple contacts,
@@ -42,7 +42,11 @@ one university, multiple adoptions, and multiple messages.
            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien.","category":"Query"}]},
 
 4. The adoption data includes have id, guid, and university. The adoptions key records what book is adopted has adoption_id, adoptions_id, date, quantity,
-book_id.  There are four record sets that can be saved to a csv files.  (If you are not sure about the csv files and their columns, contact the instructor.)
+book_id.  There are four record sets that can be saved to csv files.  (If you are not sure about the csv files and their columns, contact the instructor.)
 Create a separate function for each of the four csv file.
-5. 
+5. Create a function that accepts a state name (e.g. Illinois) and it will display the list of universities in that state
+6. Create a function that lists all the categories of books and accepts a user's choice (e.g. 'Business' and lists the titles of 
+books in that category
+7. Once the functions are created, demonstrate any one function, and describe the logic of code you used as a screencast video.
+
 
