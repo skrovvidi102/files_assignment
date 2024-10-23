@@ -2,9 +2,9 @@ import json
 import os
 
 def load_json_file():
-    folder_name=input('Enter folder name where JSON file is located: ')
+    folder_name=input('Enter folder name where JSON file is located: ') 
     file_name= 'saketh_krovvidi_adoptions.json'
-    file_path='C:/Users/krovv/Desktop/files_assignment/saketh_krovvidi_adoptions.json'
+    file_path=os.path.join(folder_name, file_name) 
     try:
         with open(file_path, 'r') as file:
             data = json.load(file)
